@@ -19,9 +19,9 @@ header {
   margin-top: 20px;
 }
 
-.logo {
+/* .logo {
   cursor: pointer;
-}
+} */
 
 nav {
   text-decoration: none;
@@ -38,14 +38,14 @@ nav ul li {
   margin-right:40px;
 }
 
-
 nav ul li a {
   transition: all .3s ease;
   text-decoration: none;
+  color:#0065FC;
 }
 
 nav ul li a:hover {
-  color: #F2F2;
+  color:grey;
 }
 
 .nav__links li:last-child {
