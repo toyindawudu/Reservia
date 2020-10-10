@@ -185,6 +185,18 @@ button .icon {
   width: 30%;
 }
 
-.accommodationsCards img {
-  width: 300px;
+.rooms {
+  background-color:#f2f2f2;;
+  width: 875px;
+  z-index: 1;
+}
+
+.roomsPageCards {
+  /* background-color:white; */
+  /* width:80%; */
+}
+
+.roomsPageCards img {
+  width: 20%;
+  width:40%;
 }
