@@ -184,3 +184,7 @@ button .icon {
 .searchResultText {
   width: 30%;
 }
+
+.accommodationsCards img {
+  width: 300px;
+}
