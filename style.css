@@ -1,3 +1,5 @@
+@import url(/image.css);
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -186,17 +188,59 @@ button .icon {
 }
 
 .rooms {
-  background-color:#f2f2f2;;
-  width: 875px;
-  z-index: 1;
+  background-color: #f2f2f2;
+  display: grid;
+  grid-template: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 50%;
 }
 
-.roomsPageCards {
-  /* background-color:white; */
-  /* width:80%; */
+.roomsHeader {
+  padding: 30px;
 }
 
-.roomsPageCards img {
-  width: 20%;
-  width:40%;
+.roomsCard {
+  background-color: #ffffff;
+  width:200px;
+  margin: auto;
+  border-radius: 20px;
+  padding:5px;
+  box-shadow: 2px 2px 2px #000000;
+  box-shadow: 0 0 16px #0000002e;
+}
+
+.roomsCardLayout {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 15px;
+}
+
+.roomsCard a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.roomCardTitle {
+  padding: 5px 0 0 10px;
+  color: black;
+}
+
+.roomsCardSubTitle {
+  font-weight: 400;
+  padding: 5px 0 0 10px;
+  color: black;
+}
+
+.roomsCardAmount {
+  font-weight: 600;
+}
+
+.roomsCardGrade {
+  padding: 5px 0 0 10px;
+  color: grey;
+}
+.roomsCardGradeColour {
+  color: #0065FC;
 }
