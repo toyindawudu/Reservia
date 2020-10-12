@@ -187,7 +187,7 @@ button .icon {
   width: 30%;
 }
 
-.rooms {
+.hotels {
   background-color: #f2f2f2;
   display: grid;
   grid-template: repeat(3, 1fr);
@@ -195,11 +195,11 @@ button .icon {
   width: 50%;
 }
 
-.roomsHeader {
+.hotelsHeader {
   padding: 30px;
 }
 
-.roomsCard {
+.hotelsCard {
   background-color: #ffffff;
   width:200px;
   margin: auto;
@@ -209,7 +209,7 @@ button .icon {
   box-shadow: 0 0 16px #0000002e;
 }
 
-.roomsCardLayout {
+.hotelsCardLayout {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -217,30 +217,30 @@ button .icon {
   gap: 15px;
 }
 
-.roomsCard a {
+.hotelsCard a {
   text-decoration: none;
   color: #f2f2f2;
 }
 
-.roomCardTitle {
+.hotelCardTitle {
   padding: 5px 0 0 10px;
   color: black;
 }
 
-.roomsCardSubTitle {
+.hotelCardSubTitle {
   font-weight: 400;
   padding: 5px 0 0 10px;
   color: black;
 }
 
-.roomsCardAmount {
+.hotelCardAmount {
   font-weight: 600;
 }
 
-.roomsCardGrade {
+.hotelCardGrade {
   padding: 5px 0 0 10px;
   color: grey;
 }
-.roomsCardGradeColour {
+.hotelCardGradeColour {
   color: #0065FC;
 }
