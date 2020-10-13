@@ -187,15 +187,18 @@ button .icon {
   width: 30%;
 }
 
-.hotels {
-  background-color: #f2f2f2;
-  display: grid;
-  grid-template: repeat(3, 1fr);
-  grid-gap: 10px;
-  width: 50%;
+.accommodations {
+  display: flex;
+  justify-content: space-between;
 }
 
-.hotelsHeader {
+.hotels {
+  background-color: #f2f2f2;
+  width: 60%;
+  min-height: auto;
+}
+
+.hotelsHeader, .popularHeader {
   padding: 30px;
 }
 
@@ -243,4 +246,19 @@ button .icon {
 }
 .hotelCardGradeColour {
   color: #0065FC;
+}
+
+.popular {
+  background-color: #f2f2f2;
+  width: 30%;
+}
+
+.hotelsCardPopular {
+  background-color: #ffffff;
+  width:340px;
+  margin: auto;
+  border-radius: 20px;
+  padding:5px;
+  box-shadow: 2px 2px 2px #000000;
+  box-shadow: 0 0 16px #0000002e;
 }
