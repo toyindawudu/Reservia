@@ -184,7 +184,7 @@ button .icon {
 }
 
 .searchResultText {
-  width: 30%;
+  width: 22%;
 }
 
 .accommodations {
@@ -269,6 +269,13 @@ button .icon {
   margin: auto;
   padding: 5px;
   border-radius: 20px;
+  box-shadow: 2px 2px 2px #000000;
+  box-shadow: 0 0 16px #0000002e;
+  margin-bottom: 20px;
+}
+
+.popularCard:last-child{
+  margin-bottom: 0;
 }
 
 .popularCardContent {
