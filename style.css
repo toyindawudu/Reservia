@@ -262,3 +262,36 @@ button .icon {
   box-shadow: 2px 2px 2px #000000;
   box-shadow: 0 0 16px #0000002e;
 }
+
+.popularCard {
+  background-color: #ffffff;
+  width: 80%;
+  margin: auto;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.popularCardContent {
+  display: flex;
+}
+
+.popularCardTitle {
+  padding: 5px 0 0 10px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.popularCardHeader {
+  margin-bottom: 5px;
+}
+
+.popularCardSubtitle{
+  font-weight: 400;
+  padding: 5px 0 0 10px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.popularCardAmount{
+  font-weight: 600;
+}
