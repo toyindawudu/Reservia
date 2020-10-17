@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;700;900&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="/CSS/style.css"> -->
+  <link rel="stylesheet" href="/CSS/main.css">
 
   <script src="https://kit.fontawesome.com/4a17ac71b8.js" crossorigin="anonymous"></script>
 
@@ -13,30 +14,28 @@
 <body>
   <!-- HEADER SECTION -->
   <section id="container">
-    <header>
-      <img class="logo" src="./images/logo/Reservia.svg" alt="logo">
-      <nav>
-        <ul class="nav__links">
-          <li><a href="#">Accomodations</a></li>
-          <li><a href="#">Activities</a></li>
-          <li><a href="#">Sign Up</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <img class="header--logo" src="./images/logo/Reservia.svg" alt="logo">
+      <a class= "header--signup link" href="#">Sign up</a>
+      
+      <a class="header--accommodation link header--margin header--link" href="#">Accomodations</a>
+      <a class="header--activities link header--margin header--link" href="#">Activities</a>
+    
     </header>
     <!-- MAIN-->
     <main>
       <!-- SEARCH -->
       <section class="search">
-        <div class="searchHeader">
-          <h3 class="searchTitle">Find a place for your dream vacation</h3>
-          <p class="searchSubtitle">Downtown or in nature</p>
+        <div class="search--header">
+          <h3 class="search--title">Find a place for your dream vacation</h3>
+          <p class="search--subtitle">Downtown or in nature</p>
         </div>
-        <form action="#" class=searchForm>
-          <span class=searchFormIconStyle>
+        <form action="#" class=search--form>
+          <span class=search--form--iconstyle>
             <i class="fas fa-map-marker-alt searchFormIcon"></i>
           </span>
           <input type="search" placeholder="Marseille, France" class="searchFormInput">
-          <button class="searchFormButton">
+          <button class="search--form--button">
             <span class="searchFormButtonText">Search</span>
             <i class="searchFormButtonIcon fas fa-search"></i>
           </button>
@@ -79,7 +78,7 @@
         </div>
       </section>
       <!--ACCOMMODATIONS-->
-      <section class="accommodations">
+      <!-- <section class="accommodations">
         <section class="hotels">
           <header class="hotelsHeader">
             <h2 class="hotelsHeaderTitle">Accommodation in Marseille</h2>
@@ -267,9 +266,9 @@
           
           </div>
         </section>
-      </section>
+      </section> -->
       <!-- ACTIVITIES -->
-      <section class="activity">
+      <!-- <section class="activity">
         <header>
           <h2>Activities in Marseille</h2>
         </header>
@@ -286,7 +285,7 @@
           <div class="activities-5" id="activities-5">5</div>
           <div class="activities-6" id="activities-6">6</div>
         </div>
-      </section>
+      </section> -->
     </main>
     <!--FOOTER -->
     <footer class="footer">

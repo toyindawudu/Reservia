@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  color: inherit;
+  list-style: none;
+}
+
+#container {
+  padding: 20px;
+}
+
+header {
+  width: 100%;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  grid-template-areas:
+    "logo logo . signup"
+    "accommodation accommodation activities activities"
+  ;
+}
+
+.header--logo {
+  grid-area: logo;
+}
+
+.header--signup {
+  grid-area: signup;
+  margin: auto;
+  color: #0065FC;
+  font-weight: 700;
+  opacity: .9;
+}
+
+.header--accommodation {
+  grid-area: accommodation;
+}
+
+.header--activities {
+  grid-area: activities;
+}
+
+.header--margin {
+  margin-top: 20px;
+  /* border-bottom: 2px #8c88885e solid; */
+}
+
+.header--link {
+  padding: 0.2rem;
+  text-align: center;
+  border-top: 3px transparent solid;
+  border-bottom: 2px #8c88885e solid;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #0065FC;
+  border-bottom: 2px #0065FC solid;
+}
+
+.search--title {
+  font-size: 1.4rem;
+  margin: 20px 0 10px;
+}
+
+.search--subtitle {
+  font-weight: 300;
+}
+
+.search--form {
+  display: flex;
+  width: 100%;
+  margin: 20px 0 20px;
+}
+
+.search--form--iconstyle {
+  background-color: #f2f2f2;
+  padding: 1rem 1.25rem;
+  border-radius: 1rem 0 0 1rem;
+  text-align: center;
+}
+
+.search--form--button {
+  background-color: #0065FC;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  padding: 1rem;
+  font-family: "Raleway", "Sans serif";
+  font-size: 1rem;
+  cursor: pointer;
+}
