@@ -5,6 +5,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #f2f2f2;
 }
 
 a {
@@ -24,6 +29,8 @@ header {
     "logo logo . signup"
     "accommodation accommodation activities activities"
   ;
+  padding: 20px;
+  background-color: #ffffff;
 }
 
 .header--logo {
@@ -69,6 +76,10 @@ header {
   border-bottom: 2px #0065FC solid;
 }
 
+.search {
+  padding: 20px;
+  background-color: #ffffff;
+}
 .search--title {
   font-size: 1.8rem;
   margin: 20px 0 10px;
@@ -200,7 +211,7 @@ header {
 
 
 .hotels--header {
-  padding: 30px;
+  padding: 30px 30px 30px 20px;
 }
 
 .hotels--header--title {
@@ -209,7 +220,7 @@ header {
 
 .hotels--card {
   background-color: #ffffff;
-  width:90%;
+  width:85%;
   margin: auto;
   border-radius: 20px;
   padding:5px;
@@ -230,14 +241,18 @@ header {
   color: #f2f2f2;
 }
 
+.hotel--card--description {
+  padding: 0px 0px 5px 10px;
+}
+
 .hotel--card--title {
-  padding: 5px 0 0 10px;
+  padding: 5px 0 0 0px;
   color: black;
 }
 
 .hotel--card--subtitle {
   font-weight: 400;
-  padding: 5px 0 0 10px;
+  padding: 5px 0 0 0px;
   color: black;
 }
 
@@ -246,7 +261,7 @@ header {
 }
 
 .hotel--card--grade {
-  padding: 5px 0 0 10px;
+  padding: 5px 0 0 0px;
   color: grey;
 }
 .hotel--card--grade--colour {
@@ -290,16 +305,24 @@ header {
   margin-bottom: 10px;
 }
 
-.popular--hotel--card:last-child{
+/* .popular--hotel--card:last-child{
   margin-bottom: 0;
-}
+} */
 
 .popular--hotel--card--content {
   display: flex;
 }
 
+.popular--hotel--card---description {
+  text-decoration: none;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .popular--hotel--card--title {
-  padding: 5px 0 0 10px;
+  padding: 5px 0 0 0px;
   color: black;
   margin-bottom: 10px;
 }
@@ -309,7 +332,7 @@ header {
 }
 
 .popular--card--subtitle{
-  font-weight: 400;
+  font-weight: 300;
   padding: 5px 0 0 10px;
   color: black;
   margin-bottom: 10px;
@@ -317,4 +340,52 @@ header {
 
 .popular--hotel--card--amount{
   font-weight: 600;
+}
+
+.activity {
+  background-color: #ffffff;
+}
+
+.activity-title {
+  padding: 5px 0 20px 20px;
+  color: black;
+}
+
+.activities {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.activity--card {
+  background-color: #ffffff;
+  width: 100%;
+  margin: auto;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px #000000;
+  box-shadow: 0 0 16px #0000002e;
+  margin-bottom: 10px;
+}
+
+.activity-card-header {
+  padding: 15px 15px 5px;
+}
+
+.footer--header, .footer--links {
+  padding: 10px;
+}
+
+.footer--content{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.footer--content--column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer--content--column-middle {
+  padding: 20px 0px;
 }
