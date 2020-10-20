@@ -1,5 +1,3 @@
-@import url(/CSS/image.css);
-
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +8,7 @@
 
 body {
   background-color: #f2f2f2;
+  box-sizing: border-box;
 }
 
 a {
@@ -21,7 +20,7 @@ a {
   padding: 20px;
 }
 
-header {
+.header {
   width: 100%;
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(4, 1fr);
@@ -91,6 +90,13 @@ header {
   border-bottom: 2px #0065FC solid;
 }
 
+@media all and (min-width: 1024px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .search {
   padding: 20px;
   background-color: #ffffff;
@@ -144,6 +150,11 @@ header {
   font-family: "Raleway", "Sans serif";
   font-size: 1rem;
   cursor: pointer;
+}
+
+.search--form--button:hover {
+  background-color: #FFFFFF;
+  color:#0065FC
 }
 
 .search-filters {
@@ -224,6 +235,31 @@ header {
 .search--result--text {
   width: 90%;
   font-size: 1.2rem;
+}
+
+
+@media all and (min-width: 1024px) {
+  .search-filters {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .search--title--small {
+    margin: 20px;
+  }
+
+  .search--result {
+    width: 400px;
+  }
+
+  .search--form--button--text {
+    display: contents;
+  }
+
+  .search--form--button--icon {
+    display: none;
+  }
 }
 
 .accommodations {
@@ -345,7 +381,7 @@ header {
 .popular--hotel--card {
   background-color: #ffffff;
   width: 340px;
-  height:140px;
+  height:130px;
   margin: auto;
   padding: 5px;
   border-radius: 20px;
@@ -357,15 +393,11 @@ header {
 .popularImage {
   width: 125px;
   height: 120px;
-  padding: 2px;
-  border-radius: 10px 0px 0px 10px;
+  /* padding: 2px; */
+  border-radius: 20px 0px 0px 20px;
   object-fit: cover;
   /* background-size: cover; */
 }
-
-/* .popular--hotel--card:last-child{
-  margin-bottom: 0;
-} */
 
 .popular--hotel--card--content {
   display: flex;
@@ -378,6 +410,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  height: 110px;
 }
 
 .popular--hotel--card--title {
@@ -402,6 +435,71 @@ header {
   font-weight: 600;
 }
 
+
+@media all and (min-width: 1024px) {
+  body {
+    background-color: white;;
+  }
+
+  .accommodations {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    gap: 10px;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+
+  .hotels--card--layout {
+    width: 100%;
+    /* background-color: red;; */
+  }
+
+  .hotels {
+    width: 100%;
+    order: 1;
+    background-color: #F2F2F2;
+  }
+
+  .hotels--card{
+    width: 200px;
+    height: 180px;
+  }
+
+  .image-rectangle-small {
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-size: cover;
+  }
+
+  .popular--hotel {
+    width: 30%;
+    order: 2;
+    margin: 0 auto;
+  }
+
+  .popular--header--title {
+    font-size: 1.6rem;
+  }
+
+  .popular--hotel--card {
+    background-color: #ffffff;
+    width: 300px;
+    height:140px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #000000;
+    box-shadow: 0 0 16px #0000002e;
+    margin-bottom: 10px;
+  }
+}
+
 .activity {
   background-color: #ffffff;
   display: flex;
@@ -411,7 +509,7 @@ header {
 }
 
 
-.activity-title {
+.activity--title {
   padding: 5px 0 20px 20px;
   color: black;
 }
@@ -428,11 +526,10 @@ header {
 .activity--card {
   background-color: #ffffff;
   width: 340px;
-  height: 150px;
+  height: 190px;
   margin: auto;
   /* padding: 5px; */
-  border-radius: 0px 0px 10px 10px;
-  box-shadow: 2px 2px 2px #000000;
+  border-radius: 20px 20px 20px 20px;
   box-shadow: 0 0 16px #0000002e;
   margin-bottom: 10px;
   overflow: hidden;
@@ -440,16 +537,85 @@ header {
 
 .activitiesImage-1 {
   width: 100%;
-  height: 100px;
-  border-radius: 0px 0px 10px 10px;
+  height: 130px;
+  border-radius: 0px 0px 0px 0px;
   background-size: contain;
   overflow: hidden;
   object-fit: cover;
 }
 
 .activity-card-header {
-  padding: 15px 15px 5px;
+  padding: 20px;
 }
+
+
+@media all and (min-width: 1024px) {
+
+  .activity--title {
+    padding: 40px 0 20px 30px;
+  }
+
+  .activity--card--layout {
+    width: 95%;
+    background-color:grey;
+    margin: 0 auto;
+    display: grid;
+    grid-template: repeat(2, 220px) / repeat(4, 1fr);
+    grid-template-areas:
+    "a b d e"
+    "a c d f";
+    border-radius: 20px 20px 0px 0px;
+}
+
+  .activity--card {
+    background-color: #ffffff;
+    border-radius: 20px 20px 0px 0px;
+    height: 450px;
+  }
+
+  .activities-1 {
+    grid-area: a;
+    margin: 0;
+    height: 400px;
+  }
+
+  .activitiesImage-1 {
+    width: 100%;
+    height: 80%;
+    border-radius: 20px 20px 0px 0px;
+    background-size: contain;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .grid--image--large {
+    height: 400px
+  }
+
+  .activities-2 {
+    grid-area: b;
+    margin: 0;
+    height: 400px;
+  }
+
+  .activities-3 {
+    grid-area: c;
+  }
+
+  .activities-4 {
+    grid-area: d;
+  }
+
+  .activities-5 {
+    grid-area: e;
+  }
+
+  .activities-6 {
+    grid-area: f;
+  }
+
+}
+
 
 .footer--header, .footer--links {
   padding: 10px;
