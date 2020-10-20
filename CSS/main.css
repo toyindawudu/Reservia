@@ -89,6 +89,41 @@ header {
   border-bottom: 2px #0065FC solid;
 }
 
+@media only screen and (min-width: 1200px){
+  header {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: baseline;
+  }
+
+  .header--navigation {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .header--signup {
+    order: 3;
+    margin: 0;
+    padding-top: 22px;
+  }
+
+  .header--accommodation {
+    order: 1;
+  }
+
+  .header--activities {
+    order: 2;
+  }
+
+  .header--link {
+    border: none;
+    margin: 20px;
+  }
+}
+
 .search {
   padding: 20px;
   background-color: #ffffff;
