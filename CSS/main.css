@@ -95,14 +95,14 @@ a {
   opacity: 1;
 } */
 
-.link {
+/* .link {
   text-decoration: none;
-}
+} */
 
-.link:hover {
+/* .link:hover {
   color: #0065FC;
   border-bottom: 2px #0065FC solid;
-}
+} */
 
 @media all and (min-width: 1024px) {
   .header {
