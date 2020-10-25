@@ -133,6 +133,7 @@ a {
   .header--signup{
     order: 3;
     margin: 0;
+    padding-left: 20px;
   }
 
   .header--accommodation {
@@ -147,7 +148,7 @@ a {
   .header--activities {
     order: 2;
     margin: 0;
-    margin: 0 100%;
+    margin: 0 50%;
     border: 0;
     font-size: 1.4rem;
   }
