@@ -1,3 +1,16 @@
+**Project Title**
+Reservia 
+
+- This is a blah blah blah 
+
+**Project Description**
+
+
+**Technologies Used**
+
+
+**Approach**
+
 I am creating a prototype using a design created by the UI designer, Loic. 
 
 Technical Constraints
@@ -5,6 +18,7 @@ Technical Constraints
 1. The site font is Raleway
 2. The colors of the chart are blue #0065FC and its lighter version #DEEBFF, as well as grey for the background #F2F2. 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 Objective of this project
@@ -18,6 +32,9 @@ What I learnt
 2. Flexbox and Grid 
 =======
 Pain-Points
+=======
+**Pain-Points**
+>>>>>>> Responsive-Design
 
 
 **Features of the website**
