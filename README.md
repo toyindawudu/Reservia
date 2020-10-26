@@ -1,41 +1,23 @@
 **Project Title**
 Reservia 
 
-- This is a blah blah blah 
-
 **Project Description**
-
+This is a booking reservation travel website
 
 **Technologies Used**
-
+1. HTML
+2. CSS 
 
 **Approach**
 
 I am creating a prototype using a design created by the UI designer, Loic. 
 
-Technical Constraints
-
+**Technical Constraints**
 1. The site font is Raleway
 2. The colors of the chart are blue #0065FC and its lighter version #DEEBFF, as well as grey for the background #F2F2. 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-Objective of this project
-
-1. Recreate the design only using HTML and CSS (ONLY)
-
-
-
-What I learnt
-1. The importance of using border-box
-2. Flexbox and Grid 
-=======
-Pain-Points
-=======
 **Pain-Points**
->>>>>>> Responsive-Design
-
+1. Making the site responsive was something that I foound quite challenging
 
 **Features of the website**
 - Users can search through their choice of cities
@@ -48,4 +30,3 @@ Pain-Points
 - Only HTML + CSS
 - Use semantic tags and the document must not contain any errors
 - Compatability across browsers
->>>>>>> Responsive-Design
