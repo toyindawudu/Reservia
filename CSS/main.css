@@ -22,9 +22,9 @@ a {
   margin: 20px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  /* grid-template-rows: repeat(2, 1fr); */
+  grid-template-rows: repeat(2, 1fr);
   grid-template-areas: 
-  "logo . . signup"
+  "logo logo . signup"
   "navbar navbar navbar navbar";
 }
 
@@ -43,13 +43,23 @@ a {
   margin-right: 25%;
 }
 
-.header--nav {
+.header--navigation {
+  list-style: none;
+  width: 100%;
   display: flex;
   align-items: center;
   grid-area: navbar;
   justify-content: space-evenly;
-  border-bottom: 2px solid #F2F2F2;
   padding-bottom: 10px;
+  border-bottom: 2px solid #f2f2f2;
+}
+
+.header--navigation--list {
+  display: inline-block;
+}
+
+.header--accommodation, .header--activities {
+  width:50%;
 }
 
 .header--nav--link {
@@ -72,55 +82,26 @@ a {
   margin-top: 20px;
 }
 
-/* .header--link {
-  padding: 0.2rem;
-  text-align: center;
-  border-top: 3px transparent solid;
-  border-bottom: 2px #8c88885e solid;
-  font-size: 1.2rem;
-}
-
-.header--link:after{
-  position: absolute;
-  left: 20px;
-  content: '';
-  height: 20px;
-  width: 180px;
-  border-bottom: solid 3px #019fb6;
-  transition: left 250ms ease-in-out, right 250ms ease-in-out;
-  opacity: 0;
-}
-
-.header--link:hover:after{
-  opacity: 1;
-} */
-
-/* .link {
-  text-decoration: none;
-} */
-
-/* .link:hover {
-  color: #0065FC;
-  border-bottom: 2px #0065FC solid;
-} */
-
 @media all and (min-width: 1024px) {
+
   .header {
     display: grid;
-    grid-template-columns: auto 1fr auto auto;
-    grid-template-areas: "logo . navbar signup";
-    padding: 0;
-    /* display: flex; */
-    flex-direction: row;
+    justify-content: center;
+    align-content: center;
     width: 95%;
-    align-items: center;
-    margin: 20px auto;
-    margin-top: 60px;
-   
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: none;
+    grid-template-areas: "logo logo . . . . .  . navbar navbar . signup";
   }
   
   .header--logo {
-    margin-right: 60%;
+    margin-right: 0;
+    margin: 0;
+    grid-area: logo;
+  }
+
+  .header--navigation {
+    border-bottom: none;
   }
 
   .header--nav{
@@ -133,7 +114,7 @@ a {
   .header--signup{
     order: 3;
     margin: 0;
-    padding-left: 20px;
+    padding-top: 10px;
   }
 
   .header--accommodation {
@@ -158,24 +139,26 @@ a {
   
   .header {
     display: grid;
-    grid-template-columns: auto 1fr auto auto;
-    grid-template-areas: "logo . navbar signup";
-    padding: 0;
-    /* display: flex; */
-    flex-direction: row;
+    justify-content: center;
+    align-content: center;
     width: 95%;
-    align-items: center;
-    margin: 20px auto;
-   
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: none;
+    grid-template-areas: "logo logo . . . . . navbar navbar . . signup";
   }
 
   .header--nav{
     width: 30%;
   }
 
+  .header--navigation {
+    border-bottom: none;
+  }
+
   .header--signup{
     order: 3;
     margin: 0;
+    padding-top: 10px;
   }
 
   .header--accommodation {
@@ -191,7 +174,6 @@ a {
     margin: 0 100%;
     border: 0;
   }
-
 
 }
 
