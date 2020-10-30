@@ -17,7 +17,7 @@ a {
   list-style: none;
 }
 
-.header {
+/* .header {
   width: 100%;
   margin: 20px auto;
   display: grid;
@@ -26,14 +26,14 @@ a {
   grid-template-areas: 
   "logo logo . signup"
   "navbar navbar navbar navbar";
-}
+} */
 
-.header--logo {
+/* .header--logo {
   grid-area: logo;
   padding-left: 20px;
-}
+} */
 
-.header--signup {
+/* .header--signup {
   grid-area: signup;
   margin: auto;
   color: #0065FC;
@@ -41,25 +41,25 @@ a {
   opacity: .9;
   font-size: 1.2rem;
   margin-right: 25%;
-}
+} */
 
-.header--navigation {
+/* .header--navigation {
   list-style: none;
   width: 100%;
   display: flex;
   align-items: center;
   grid-area: navbar;
   justify-content: space-evenly;
-  /* padding-bottom: 10px; */
+  padding-bottom: 10px;
   border-bottom: 2px solid #f2f2f2;
   position: relative;
-}
+} */
 
-.red {
+/* .red {
   background-color: red;
   padding: 15px 30px;
   width: 50%;
-  /* float: left; */
+  float: left;
 }
 
 
@@ -68,9 +68,67 @@ a {
   padding: 10px 30px;
   width: 50%;
   margin: 0 auto;
-  /* position: absolute; */
-  /* float: left; */
+  position: absolute;
+  float: left;
+} */
+
+/* New CSS Code Testing */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  /* background-color: pink; */
+  align-items: stretch;
 }
+
+.header--top {
+  display: flex;
+  /* flex: 1; */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px 10px;
+}
+
+.header--bottom {
+  display: flex;
+  /* flex: 1; */
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: pink;
+  padding: 15px;
+  /* border-bottom: 2px solid black; */
+  
+}
+
+.header--bottom li {
+  list-style: none;
+  /* border-bottom: 2px solid red; */
+  /* flex-grow: 1; */
+}
+
+.testing {
+  background-color: red;
+  border-bottom: 2px solid green;
+}
+
+/* ul {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: green;
+} */
+
+ul.menu li {
+  /* display: block; */
+  /* flex-grow: 1; */
+  text-align: center;
+  /* background-color: red; */
+}
+
+/* End of Testing Code */
+
 .header--navigation--list {
   /* display: inline-block; */
   /* font-size: 1.4rem;; */
