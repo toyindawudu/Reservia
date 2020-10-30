@@ -30,7 +30,7 @@ a {
 
 .header--logo {
   grid-area: logo;
-  margin-left: 25%;
+  padding-left: 20px;
 }
 
 .header--signup {
@@ -50,12 +50,31 @@ a {
   align-items: center;
   grid-area: navbar;
   justify-content: space-evenly;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   border-bottom: 2px solid #f2f2f2;
+  position: relative;
 }
 
+.red {
+  background-color: red;
+  padding: 15px 30px;
+  width: 50%;
+  /* float: left; */
+}
+
+
+.green {
+  background-color: green;
+  padding: 10px 30px;
+  width: 50%;
+  margin: 0 auto;
+  /* position: absolute; */
+  /* float: left; */
+}
 .header--navigation--list {
-  display: inline-block;
+  /* display: inline-block; */
+  /* font-size: 1.4rem;; */
+  border-bottom: 2px solid #f2f2f2;
 }
 
 .header--accommodation, .header--activities {
