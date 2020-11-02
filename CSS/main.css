@@ -72,7 +72,14 @@ a {
   float: left;
 } */
 
-/* New CSS Code Testing */
+/* -----------------------------------------------
+                   
+
+
+ //              New CSS Code Testing 
+  
+  
+----------------------------------------------- */
 
 .header {
   display: flex;
@@ -157,6 +164,24 @@ ul.menu li {
 
 .header--margin {
   margin-top: 20px;
+}
+
+@media all and (min-width: 1440px) {
+  .header {
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .header--accommodation {
+    order: 2;
+  }
+
+  .header--button {
+    order: 3;
+  }
+
+
+
 }
 
 @media all and (min-width: 1024px) {
@@ -255,23 +280,179 @@ ul.menu li {
 }
 
 
-.search {
+/* .search {
   padding: 0 20px;
   background-color: #ffffff;
-}
-.search--title {
+} */
+
+/* .search--title {
   font-size: 1.8rem;
   margin: 20px 0 10px;
-}
+} */
 
-.search--subtitle {
+/* .search--subtitle {
   font-weight: 300;
-}
+} */
 
-.search--form {
+/* .search--form {
   display: flex;
   width: 100%;
   margin: 20px 0 20px;
+} */
+
+/* .search--form--iconstyle {
+  background-color: #f2f2f2;
+  padding: 1rem 1.25rem;
+  border-radius: 1rem 0 0 1rem;
+  text-align: center;
+} */
+
+/* .search--form--input {
+  border-right: none;
+  border-left: none;
+  border-top: #F2F2F2 1px solid;
+  border-bottom: #F2F2F2 1px solid;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: "Raleway", "Sans serif";
+  color:black;
+} */
+
+/* .search--form--button--text {
+  display:none;
+} */
+
+/* .search--form--button {
+  background-color: #0065FC;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  padding: 1rem;
+  font-family: "Raleway", "Sans serif";
+  cursor: pointer;
+} */
+
+/* .search--form--button:hover {
+  background-color: #FFFFFF;
+  color:#0065FC
+} */
+
+/* .search-filters {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+/* .search--title--small{
+  font-size: 1.4rem;
+  margin-right: 200px;
+  padding: 10px 0px 10px 0px;
+} */
+
+/* .search--filter {
+  display: flex;
+  align-items: center;
+  border:#f2f2f2 2px solid;
+  border-radius: 2rem;
+  justify-content: space-between;
+  width: auto;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+} */
+
+/* .search--filter:hover {
+  background-color: #0065FC;
+  color: white;
+} */
+
+/* .search--filter--icon {
+  color: #0065FC;
+  background-color: #DEEBFF;
+  padding: 0.6rem;
+  border-radius: 100%;
+  margin-right: 1rem;
+  height: 3rem;
+  width: 3rem;
+  min-height: 3.5rem;
+  min-width: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -2px;
+} */
+
+/* .search--filter--icon:hover {
+  background-color: #0065FC;
+  color:#ffffff;
+} */
+
+/* .search--filter--text {
+  padding: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+} */
+
+/* .search--result {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+} */
+
+
+/* .search--result--icon {
+  color: #0065FC;
+  background-color: #ffffff;
+  border:#f2f2f2 2px solid;
+  padding: 1rem;
+  border-radius: 100%;
+  margin-right: 1rem;
+  height: 1rem;
+  width: 1rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .search--result--text {
+  width: 90%;
+  font-size: 1.2rem;
+} */
+
+/* -----------------------------------------------
+                   
+
+
+ //             New CSS Code Testing 
+  
+  
+----------------------------------------------- */
+
+.search {
+  width: 90%;
+  margin: 0 auto;
+  /* display: grid; */
+  grid-template-columns: repeat(4, 80px);
+  grid-gap: 15px;
+
+}
+
+.search--header {
+  grid-column: 1/5;
+}
+
+.search--title {
+  margin: 20px 0 10px;
+}
+.search--subtitle {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.search--form {
+  margin-bottom: 35px;
 }
 
 .search--form--iconstyle {
@@ -281,12 +462,16 @@ ul.menu li {
   text-align: center;
 }
 
+.search--title--small {
+  margin-bottom: 15px;
+}
+
 .search--form--input {
   border-right: none;
   border-left: none;
   border-top: #F2F2F2 1px solid;
   border-bottom: #F2F2F2 1px solid;
-  padding: 0 1.5rem;
+  padding: 0.7rem 1.5rem;
   box-sizing: border-box;
   font-size: 1.4rem;
   font-weight: 600;
@@ -306,13 +491,7 @@ ul.menu li {
   border-radius: 0 1rem 1rem 0;
   padding: 1rem;
   font-family: "Raleway", "Sans serif";
-  font-size: 1rem;
   cursor: pointer;
-}
-
-.search--form--button:hover {
-  background-color: #FFFFFF;
-  color:#0065FC
 }
 
 .search-filters {
@@ -320,32 +499,24 @@ ul.menu li {
   flex-wrap: wrap;
 }
 
-.search--title--small{
-  font-size: 1.4rem;
-  margin-right: 200px;
-  padding: 10px 0px 10px 0px;
-}
-
 .search--filter {
   display: flex;
   align-items: center;
   border:#f2f2f2 2px solid;
   border-radius: 2rem;
-  justify-content: space-between;
-  width: auto;
-  margin-right: 2rem;
+  width: min-content;
+  margin-right: 20px;
   margin-bottom: 1rem;
 }
 
-.search--filter:hover {
-  background-color: #0065FC;
-  color: white;
+.search--filter:nth-last-child(2) {
+  padding-right: 5rem;
 }
 
 .search--filter--icon {
   color: #0065FC;
   background-color: #DEEBFF;
-  padding: 0.6rem;
+  padding: 0 0.6rem 0 0;
   border-radius: 100%;
   margin-right: 1rem;
   height: 3rem;
@@ -358,22 +529,18 @@ ul.menu li {
   margin: -2px;
 }
 
-.search--filter--icon:hover {
-  background-color: #0065FC;
-  color:#ffffff;
-}
-
 .search--filter--text {
   padding: 10px;
   font-size: 1.25rem;
   font-weight: 600;
+  width: max-content;
 }
 
-.search--result {
+
+.search--filter {
+  width: max-content;
   display: flex;
-  align-items: center;
-  /* flex-wrap: wrap; */
-  padding: 20px 0px;
+  margin-bottom: 10px;
 }
 
 .search--result--icon {
@@ -390,9 +557,15 @@ ul.menu li {
   align-items: center;
 }
 
-.search--result--text {
-  width: 90%;
-  font-size: 1.2rem;
+@media all and (min-width:1350px) {
+  .search--result {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 }
 
 @media all and (min-width: 1024px) {
@@ -411,7 +584,11 @@ ul.menu li {
   }
 
   .search--result {
-    width: 400px;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
   }
 
   .search--form--button--text {
@@ -421,6 +598,23 @@ ul.menu li {
   .search--form--button--icon {
     display: none;
   }
+
+  .search--result--icon {
+    color: #0065FC;
+    background-color: #ffffff;
+    border:#f2f2f2 2px solid;
+    padding: 1rem;
+    border-radius: 100%;
+    margin-right: 1rem;
+    height: 1rem;
+    width: 1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .search--title--small {
@@ -511,7 +705,6 @@ ul.menu li {
 .hotel--card--grade--colour {
   color: #0065FC;
 }
-
 
 .popular--hotel {
   background-color: #f2f2f2;
@@ -605,6 +798,16 @@ ul.menu li {
   font-weight: 600;
 }
 
+
+
+/* -----------------------------------------------
+                   
+
+
+  New CSS Code Testing 
+  
+  
+----------------------------------------------- */
 
 @media all and (min-width: 1024px) {
   body {
