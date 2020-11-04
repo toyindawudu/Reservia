@@ -187,6 +187,7 @@ ul.menu li {
 @media all and (min-width: 1024px) {
 
   .header {
+    margin: 0 auto;
     display: grid;
     justify-content: center;
     align-content: center;
