@@ -84,17 +84,24 @@ a {
 .header {
   display: flex;
   flex-direction: column;
-  /* background-color: pink; */
-  align-items: stretch;
+  background-color: pink;
+  /* align-items: stretch; */
+  margin: 0 auto;
 }
 
 .header--top {
   display: flex;
   /* flex: 1; */
-  flex-direction: row;
+  /* flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;*/
   padding: 40px 20px 10px;
+
+}
+
+.header--logo {
+  flex-grow: 3;
+  background-color: red;
 }
 
 .header--bottom {
@@ -102,10 +109,14 @@ a {
   /* flex: 1; */
   flex-direction: row;
   justify-content: space-evenly;
-  background-color: pink;
+  /* background-color: pink; */
   padding: 15px;
   /* border-bottom: 2px solid black; */
   
+}
+
+.header--signup {
+  padding: 15px;
 }
 
 .header--bottom li {
@@ -115,7 +126,7 @@ a {
 }
 
 .testing {
-  background-color: red;
+  /* background-color: red; */
   border-bottom: 2px solid green;
 }
 
@@ -187,14 +198,19 @@ ul.menu li {
 @media all and (min-width: 1024px) {
 
   .header {
-    margin: 0 auto;
-    display: grid;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     width: 95%;
-    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-columns: repeat(12, 1fr);
     grid-template-rows: none;
-    grid-template-areas: "logo logo . . . . .  . navbar navbar . signup";
+    grid-template-areas: "logo logo . . . . .  . navbar navbar . signup"; */
+  }
+
+  .header--top {
+    padding: 15px;
+    align-items: center;
   }
   
   .header--logo {
