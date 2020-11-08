@@ -17,61 +17,6 @@ a {
   list-style: none;
 }
 
-/* .header {
-  width: 100%;
-  margin: 20px auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: 
-  "logo logo . signup"
-  "navbar navbar navbar navbar";
-} */
-
-/* .header--logo {
-  grid-area: logo;
-  padding-left: 20px;
-} */
-
-/* .header--signup {
-  grid-area: signup;
-  margin: auto;
-  color: #0065FC;
-  font-weight: 700;
-  opacity: .9;
-  font-size: 1.2rem;
-  margin-right: 25%;
-} */
-
-/* .header--navigation {
-  list-style: none;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  grid-area: navbar;
-  justify-content: space-evenly;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #f2f2f2;
-  position: relative;
-} */
-
-/* .red {
-  background-color: red;
-  padding: 15px 30px;
-  width: 50%;
-  float: left;
-}
-
-
-.green {
-  background-color: green;
-  padding: 10px 30px;
-  width: 50%;
-  margin: 0 auto;
-  position: absolute;
-  float: left;
-} */
-
 /* -----------------------------------------------
                    
 
@@ -81,101 +26,73 @@ a {
   
 ----------------------------------------------- */
 
-.header {
+.header { 
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  background-color: pink;
-  /* align-items: stretch; */
-  margin: 0 auto;
+  justify-content: center;
 }
 
-.header--top {
+.nav {
+  position: relative;
+  height: 120px;
   display: flex;
-  /* flex: 1; */
-  /* flex-direction: row;
-  justify-content: space-between;
-  align-items: center;*/
-  padding: 40px 20px 10px;
-
+  flex-wrap: wrap;
 }
 
 .header--logo {
-  flex-grow: 3;
-  background-color: red;
+  position: absolute;
+  top: 15px;
+  left: 10px
 }
 
-.header--bottom {
+.signup-btn {
+  position: absolute;
+  top: 30px;
+  left: 75%;
+  font-size: 1.6rem;
+  color: #0065FC;
+  font-weight: 600;
+}
+
+.nav-links {
   display: flex;
-  /* flex: 1; */
-  flex-direction: row;
-  justify-content: space-evenly;
-  /* background-color: pink; */
-  padding: 15px;
-  /* border-bottom: 2px solid black; */
-  
 }
 
-.header--signup {
-  padding: 15px;
+.nav-links li {
+  list-style-type: none;
 }
 
-.header--bottom li {
-  list-style: none;
-  /* border-bottom: 2px solid red; */
-  /* flex-grow: 1; */
-}
-
-.testing {
-  /* background-color: red; */
-  border-bottom: 2px solid green;
-}
-
-/* ul {
-  display: flex;
-  align-items: stretch;
-  justify-content: space-evenly;
-  width: 100%;
-  background-color: green;
-} */
-
-ul.menu li {
-  /* display: block; */
-  /* flex-grow: 1; */
+.accommodation-btn, .activities-btn {
+  width: 50%;
   text-align: center;
-  /* background-color: red; */
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+
+.accommodation-btn {
+  position: absolute;
+  top: 60%;
+  left: 0%;
+  margin: 0;
+  border-bottom-color: #0065fc;
+  border-bottom-style: solid;
+  border-top-style: none;
+  color: #1e90ff;
+}
+
+.activities-btn {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin: 0;
+/*   border-bottom-color: #0065fc; */
+  border-bottom-style: solid;
+  border-top-style: none;
+/*   color: #1e90ff; */
 }
 
 /* End of Testing Code */
-
-.header--navigation--list {
-  /* display: inline-block; */
-  /* font-size: 1.4rem;; */
-  border-bottom: 2px solid #f2f2f2;
-}
-
-.header--accommodation, .header--activities {
-  width:50%;
-}
-
-.header--nav--link {
-  /* padding: 2rem; */
-  font-weight: 500;
-  text-align: center;
-  transition-duration: 0.1s;
-  border-top: 3px transparent solid;
-  border-bottom: 3px transparent solid;
-}
-
-.header--nav--link[data-active=true] {
-  color: #0065FC;
-}
-.header--nav--link:hover {
-  color: #0065FC;
-}
-
-.header--margin {
-  margin-top: 20px;
-}
 
 @media all and (min-width: 1440px) {
   .header {
@@ -553,7 +470,6 @@ ul.menu li {
   width: max-content;
 }
 
-
 .search--filter {
   width: max-content;
   display: flex;
@@ -588,8 +504,9 @@ ul.menu li {
 @media all and (min-width: 1024px) {
 
   .search {
-    padding: 0 30px;
+    width: 95%;
   }
+
   .search-filters {
     margin: 0;
     display: flex;
@@ -633,6 +550,7 @@ ul.menu li {
 
 
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .search--title--small {
     margin-right: 10px;
