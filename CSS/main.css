@@ -86,103 +86,58 @@ a {
   top: 60%;
   left: 50%;
   margin: 0;
-/*   border-bottom-color: #0065fc; */
+  border-bottom-color: #ddd;
   border-bottom-style: solid;
   border-top-style: none;
-/*   color: #1e90ff; */
 }
 
 /* End of Testing Code */
-
-@media all and (min-width: 1440px) {
-  .header {
-    margin: 0 auto;
-    display: flex;
-  }
-
-  .header--accommodation {
-    order: 2;
-  }
-
-  .header--button {
-    order: 3;
-  }
-
-
-
-}
 
 @media all and (min-width: 1024px) {
 
   .header {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     width: 95%;
-    /* grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: none;
-    grid-template-areas: "logo logo . . . . .  . navbar navbar . signup"; */
-  }
-
-  .header--top {
-    padding: 15px;
-    align-items: center;
   }
   
+  .nav {
+    background-color: pink;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: "logo logo . . . . . . . accommodation activities signup";
+  }
+  
+
   .header--logo {
     margin-right: 0;
     margin: 0;
     grid-area: logo;
   }
 
-  .header--navigation {
+  .accommodation-btn {
+    position: relative;
+    grid-area: accommodation;
     border-bottom: none;
   }
 
-  .header--nav{
-    width: 30%;
-    font-size: 1.2rem;
+  .activities-btn {
+    position: relative;
     border-bottom: none;
-    padding-bottom: 0px;
+    grid-area: activities;
   }
 
-  .header--signup{
+  .signup-btn{
     order: 3;
     margin: 0;
     padding-top: 10px;
+    grid-area: signup;
   }
 
-  .header--accommodation {
-    order: 1;
-    margin: 0;
-    /* margin-right: 3%; */
-    border:0;
-    font-size: 1.4rem;
-    margin-right: 25px;
-  }
-
-  .header--activities {
-    order: 2;
-    margin: 0;
-    margin: 0 50%;
-    border: 0;
-    font-size: 1.4rem;
-  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   
-  .header {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    width: 95%;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: none;
-    grid-template-areas: "logo logo . . . . . navbar navbar . . signup";
-  }
-
   .header--nav{
     width: 30%;
   }
@@ -445,6 +400,7 @@ a {
 
 .search--filter:nth-last-child(2) {
   padding-right: 5rem;
+  margin-right: 30%
 }
 
 .search--filter--icon {
@@ -476,6 +432,13 @@ a {
   margin-bottom: 10px;
 }
 
+.search--result {
+  display: flex;
+  max-width: 350px;
+  margin: 10px 0px 30px;
+  align-items: baseline;
+}
+
 .search--result--icon {
   color: #0065FC;
   background-color: #ffffff;
@@ -488,17 +451,6 @@ a {
   display:flex;
   justify-content: center;
   align-items: center;
-}
-
-@media all and (min-width:1350px) {
-  .search--result {
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
 }
 
 @media all and (min-width: 1024px) {
