@@ -22,82 +22,27 @@ a {
   max-width: 1440px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 /* -----------------------------------------------
                    
- //              Header
+ //              HEADER
   
 ----------------------------------------------- */
-
-/* .header { 
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.nav {
-  position: relative;
-  height: 120px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.header--logo {
-  position: absolute;
-  top: 10px;
-  left: 10px
-}
-
-.signup-btn {
-  position: absolute;
-  top: 30px;
-  left: 75%;
-  font-size: 1.6rem;
-  color: #0065FC;
-  font-weight: 600;
-}
-
-.nav-links {
-  display: flex;
-}
-
-.nav-links li {
-  list-style-type: none;
-}
-
-.accommodation-btn, .activities-btn {
-  width: 50%;
-  text-align: center;
-  font-size: 1.6rem;
-  padding-bottom: 10px;
-}
-
-.accommodation-btn {
-  position: absolute;
-  top: 60%;
-  left: 0%;
-  margin: 0;
-  border-bottom-color: #0065fc;
-  border-bottom-style: solid;
-  border-top-style: none;
-  color: #1e90ff;
-}
-
-.activities-btn {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  margin: 0;
-  border-bottom-color: #ddd;
-  border-bottom-style: solid;
-  border-top-style: none;
-} */
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 1rem
 }
 
 .header--logo {
@@ -128,19 +73,25 @@ nav ul li {
   padding-bottom: 1rem;
 }
 
-nav ul li:hover {
+/* nav ul li:hover {
   border-bottom: 2px solid #0065fc;
-}
+} */
 
 .active {
   border-bottom: 2px solid #0065fc;
   color: #0065FC;
 }
 
+.active a {
+  color: inherit;
+}
+
 .signup-btn {
-  margin-right: 1rem;
+  margin-right: 3rem;
   color: #0065FC;
-  font-weight: 600;;
+  font-weight: 600;
+  display: flex;
+	align-items: center;
 }
 
 
@@ -148,98 +99,65 @@ nav ul li:hover {
 
 @media all and (min-width: 1024px) {
 
-  .header {
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-  }
-  
-  .nav {
-    background-color: pink;
-    /* display: grid; */
-    /* grid-template-columns: repeat(12, 1fr); */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
 
-  }
-  
-  .header--logo {
-    margin-right: 0;
-    margin: 0;
-    grid-column: 1/3;
+@media only screen and (min-width: 768px) {
+
+  .header-container {
+    margin-top: 0;
   }
 
-  .nav-links {
-    grid-column: 9/12;
+  .main-padding {
+  padding: 2rem 1.5rem 1rem 1rem;
   }
 
-  .accommodation-btn {
-    /* position: relative; */
-    grid-column:8/9;
+  /* .header--logo {
+    margin-top: 2rem;
+  } */
+
+  .logo,
+  nav li,
+  .signup {
+    padding-top: 1.5rem;
+  }
+
+  nav {
+    order: 0;
+    width: 40%;
+    margin-left: auto;
+    margin-top: 0;
+  }
+
+  nav ul {
+    margin-top: 0;
+  }
+
+  nav ul li {
+    border-top: 2px solid #f2f2f2;
     border-bottom: none;
   }
 
-  .activities-btn {
-    /* position: relative; */
+  .active {
+    border-top: 2px solid #0065fc;
     border-bottom: none;
-    grid-column:10/11 ;
+    color: #0065FC;
   }
 
-  .signup-btn{
-    width: max-content;
-    grid-column:11/12 ;
-    margin: 0;
-    padding-top: 10px;
+  .signup-btn {
+    margin-right: 4rem;
   }
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  
-  .header--nav{
-    width: 30%;
-  }
+/* -----------------------------------------------      
 
-  .header--navigation {
-    border-bottom: none;
-  }
-
-  .header--signup{
-    order: 3;
-    margin: 0;
-    padding-top: 10px;
-  }
-
-  .header--accommodation {
-    order: 1;
-    margin: 0;
-    /* margin-right: 3%; */
-    border:0;
-  }
-
-  .header--activities {
-    order: 2;
-    margin: 0;
-    margin: 0 100%;
-    border: 0;
-  }
-
-}
-
-/* -----------------------------------------------
-                   
-
-
- //             New CSS Code Testing 
-  
+ //          New CSS Code Testing 
   
 ----------------------------------------------- */
 
 .search {
   width: 90%;
   margin: 0 auto;
-  /* display: grid; */
   grid-template-columns: repeat(4, 80px);
   grid-gap: 15px;
 
@@ -383,7 +301,7 @@ nav ul li:hover {
   }
 
   .search--title--small {
-    margin: 20px;
+    margin: 0px 20px 20px 0px ;
   }
 
   .search--result {
@@ -523,10 +441,6 @@ nav ul li:hover {
   align-items: baseline;
 }
 
-.popular--hotel--icon {
-  padding-right: 10px;
-}
-
 .hotels--card--popular {
   background-color: #ffffff;
   width:340px;
@@ -578,12 +492,14 @@ nav ul li:hover {
   justify-content: space-between;
   width: 100%;
   height: 110px;
+  margin-left: 20px;
 }
 
 .popular--hotel--card--title {
   padding: 5px 0 0 0px;
   color: black;
   margin-bottom: 10px;
+  font-size: 1.3rem;
 }
 
 .popular--hotel--card--header {
@@ -611,7 +527,43 @@ nav ul li:hover {
   
 ----------------------------------------------- */
 
-@media all and (min-width: 1024px) {
+
+
+@media only screen and (min-width: 768px) {
+
+  .popular--header--title {
+    font-size: 1.6rem;
+  }
+
+  .popular--card--layout {
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+
+  .popular--hotel--card {
+    background-color: #ffffff;
+    max-width: 300px;
+    height:130px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px #000000;
+    box-shadow: 0 0 16px #0000002e;
+    margin-bottom: 10px;
+  }
+
+  .popularImage {
+    width: 100px;
+  }
+
+  .popular--hotel--card--title {
+    font-size: 1rem;
+  }
+
+
+}
+
+@media all and (min-width: 1200px) {
   body {
     background-color: white;;
   }
@@ -643,9 +595,10 @@ nav ul li:hover {
   }
 
   .hotels--card{
-    width: 230px;
+    width: 200px;
     height: 180px;
     margin: 10px 0px;
+    background-color: #ffffff;
   }
 
   .image-rectangle-small {
@@ -658,8 +611,12 @@ nav ul li:hover {
     background-size: cover;
   }
 
+  .hotels--card--figurecaption {
+    font-size: 1rem;
+  }
+
   .popular--hotel {
-    /* width: 30%; */
+    max-width: 400px;
     order: 2;
     margin: 0 auto;
     border-radius: 20px;
@@ -676,7 +633,7 @@ nav ul li:hover {
 
   .popular--hotel--card {
     background-color: #ffffff;
-    width: 75%;
+    width: 300px;
     height:130px;
     margin: auto;
     padding: 5px;
@@ -695,39 +652,7 @@ nav ul li:hover {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-  .popular--header--title {
-    font-size: 1.6rem;
-  }
-
-  .popular--card--layout {
-    margin: 0 auto;
-    justify-content: space-around;
-  }
-
-  .popular--hotel--card {
-    background-color: #ffffff;
-    width: 220px;
-    height:130px;
-    margin: auto;
-    padding: 5px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 2px #000000;
-    box-shadow: 0 0 16px #0000002e;
-    margin-bottom: 10px;
-  }
-
-  .popularImage {
-    width: 100px;
-  }
-
-  .popular--hotel--card--title {
-    font-size: 1rem;
-  }
-
-
-}
+/* @media only screen and (min-width: 1200px) {} */
 
 .activity {
   background-color: #ffffff;
