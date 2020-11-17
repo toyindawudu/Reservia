@@ -13,7 +13,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: #000;
   list-style: none;
 }
 
@@ -23,7 +23,7 @@ a {
 }
 
 h1,
-h2,
+h2, 
 h3,
 h4,
 h5,
