@@ -1,0 +1,128 @@
+/* Search Styling */
+.search-title {
+  padding-top: 1.5rem;
+}
+
+.search-subtitle {
+  padding-bottom: 30px;
+}
+
+.search-form {
+  margin-bottom: 2rem;
+}
+
+.search-form-icon {
+  background-color: #f2f2f2;
+  padding: 1rem 1.25rem;
+  border-radius: 1rem 0 0 1rem;
+  text-align: center;
+}
+
+.location-icon {
+  color: black;
+}
+
+.search-form-input {
+  border-right: none;
+  border-left: none;
+  border-top: #F2F2F2 1px solid;
+  border-bottom: #F2F2F2 1px solid;
+  padding: 0.7rem 1.5rem;
+  font-weight: 600;
+  font-family: "Raleway", "Sans serif";
+  color:black;
+}
+
+.search-form-button {
+  background-color: #0065FC;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  padding: 1rem;
+  font-family: "Raleway", "Sans serif";
+  cursor: pointer;
+}
+
+.search-form-button-text {
+  display:none;
+}
+
+.button-icon {
+  color: white;
+}
+
+.filter-title {
+  margin: 0px 20px 20px 0px ;
+}
+
+.search-filters {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+}
+
+.search-filter {
+  display: flex;
+  align-items: center;
+  border:#f2f2f2 2px solid;
+  border-radius: 2rem;
+  width: min-content;
+  margin-right: 10px;
+  margin-bottom: 1rem;
+}
+
+.search-filter:nth-last-child(2) {
+  padding-right: 5rem;
+  /* margin-right: 30% */
+}
+
+.search--filter--icon {
+  color: #0065FC;
+  background-color: #DEEBFF;
+  padding: 0 0.6rem 0 0;
+  border-radius: 100%;
+  margin-right: 1rem;
+  height: 3rem;
+  width: 3rem;
+  min-height: 3.5rem;
+  min-width: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -2px;
+}
+
+.search--filter--text {
+  padding: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  width: max-content;
+}
+
+.search--filter {
+  width: max-content;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.search--result {
+  display: flex;
+  max-width: 350px;
+  margin: 10px 0px 30px;
+  align-items: baseline;
+}
+
+.search--result--icon {
+  color: #0065FC;
+  background-color: #ffffff;
+  border:#f2f2f2 2px solid;
+  padding: 1rem;
+  border-radius: 100%;
+  margin-right: 1rem;
+  height: 1rem;
+  width: 1rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
