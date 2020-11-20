@@ -1,0 +1,118 @@
+
+.popular-hotel {
+  background-color: #ececec;
+  padding-bottom: 3rem;
+}
+
+.popular-hotel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.popular-hotel-icon {
+  color: black;
+}
+
+.popular-hotel-card {
+  background-color: #fff;
+  width: 330px;
+  height: 140px;
+  margin-bottom: 15px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.popular-hotel-card:last-child {
+  margin-bottom: 30px;
+}
+
+.popular-hotel-card-content {
+  display: flex;
+
+}
+
+.popular-hotel-card-content img {
+  width: 125px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 20px 0px 0px 20px;
+  padding: 5px 0px 5px 5px;
+}
+
+.popular-hotel-card-description {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.popular-hotel-card-header {
+  width: 150px;
+}
+
+/* Accommodation in Marseille */
+
+.hotels-header {
+  padding: 2rem 0rem;
+}
+
+.hotel-card {
+  background-color: #fff;
+  width: 330px;
+  height: 195px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 16px #0000002e;
+  border-radius: 20px;
+}
+
+.hotel-image {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-size: cover;
+}
+
+.hotel-card-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 10px;
+}
+.text-margin {
+  margin-bottom: 5px;
+}
+
+figcaption {
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+
+.hotel-card-amount {
+  font-weight: 600;
+}
+
+.hotel-grade-colour {
+  color: grey;
+}
+
+/* Screens between 600px and 1023px */
+
+@media only screen and (min-width: 600px) {
+  .popular-hotel-card {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .hotel-card {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+}
+
+
+/* Desktop*/
+@media only screen and (min-width: 1024px) {}
