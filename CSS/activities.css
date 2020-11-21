@@ -49,6 +49,8 @@
   padding: 20px;
 }
 
+
+
 @media all and (min-width: 1024px) {
 
   .activity {
@@ -159,5 +161,12 @@
     margin: 10px;
     height: 100%;
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .activity--card--layout {
+    margin: 0 auto;
+    margin-bottom: 2rem;
   }
 }

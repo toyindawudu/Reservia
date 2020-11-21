@@ -111,8 +111,17 @@ figcaption {
     margin: 0 auto;
     margin-bottom: 1rem;
   }
+
+  .hotel-card-layout {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 15px;
+  }
 }
 
 
 /* Desktop*/
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+}
