@@ -31,6 +31,7 @@ a {
   padding: 0 2rem;
 }
 
+
 .single-padding {
   padding-bottom: 1rem;
 }
@@ -46,3 +47,9 @@ a {
 /* Most popular Hotel - see rooms.css for all the styling for the accommmodation and most popular rooms */
 
 /* Activities */
+
+@media only screen and (min-width: 1024px) {
+  .desktop-padding {
+    padding: 0 2rem;
+  }
+}
