@@ -58,6 +58,8 @@
 
 .hotels-header {
   padding-top: 2rem;
+  padding-left: 1.5rem;
+
 }
 
 .hotel-card {
@@ -112,6 +114,16 @@ figcaption {
     margin-bottom: 2rem;
   }
 
+  .accommodations {
+    background-color:#ececec;
+    margin-right: 1rem;
+  }
+
+  .hotel-card {
+    width: 280px;
+    margin: 0;
+  }
+
   .hotel-card {
     /* margin: 0 auto; */
     margin-bottom: 1rem;
@@ -143,13 +155,15 @@ figcaption {
     order: 2;
   }
 
-  .accommodations {
-    background-color: plum;
-    margin-right: 3rem;
+  .popular-hotel {
+    padding-bottom: 0;
   }
 
-  .hotel-card {
-    width: 240px;
-    margin: 0;
+  .popular-hotel-card {
+    width: 290px;
   }
+
+  
+
+  
 }

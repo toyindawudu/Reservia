@@ -4,18 +4,25 @@
 }
 
 .search-subtitle {
-  padding-bottom: 30px;
+  /* margin-top: 0.5rem; */
 }
 
 .search-form {
   margin-bottom: 2rem;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  border-radius: 1rem;
+
 }
 
 .search-form-icon {
   background-color: #f2f2f2;
   padding: 1rem 1.25rem;
   border-radius: 1rem 0 0 1rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .location-icon {
@@ -23,14 +30,13 @@
 }
 
 .search-form-input {
-  border-right: none;
-  border-left: none;
-  border-top: #F2F2F2 1px solid;
-  border-bottom: #F2F2F2 1px solid;
-  padding: 0.7rem 1.5rem;
-  font-weight: 600;
-  font-family: "Raleway", "Sans serif";
-  color:black;
+  border: none;
+  padding-left: 1rem;
+}
+
+input {
+  width: 70%;
+  box-sizing: border-box;
 }
 
 .search-form-button {
@@ -53,7 +59,7 @@
 }
 
 .filter-title {
-  margin: 0px 20px 20px 0px ;
+  margin: 0px 200px 20px 0px ;
 }
 
 .search-filters {
@@ -69,24 +75,22 @@
   border-radius: 2rem;
   width: min-content;
   margin-right: 10px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-.search-filter:nth-last-child(2) {
-  padding-right: 5rem;
-  /* margin-right: 30% */
+.search-filter:nth-last-child(1) {
+  padding-right: 1rem;
 }
 
-.search--filter--icon {
+.search-filter-icon {
   color: #0065FC;
   background-color: #DEEBFF;
-  padding: 0 0.6rem 0 0;
   border-radius: 100%;
   margin-right: 1rem;
   height: 3rem;
   width: 3rem;
-  min-height: 3.5rem;
-  min-width: 3.5rem;
+  /* min-height: 3.5rem;
+  min-width: 3.5rem; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,7 +99,6 @@
 
 .search--filter--text {
   padding: 10px;
-  font-size: 1.25rem;
   font-weight: 600;
   width: max-content;
 }
@@ -113,7 +116,7 @@
   align-items: baseline;
 }
 
-.search--result--icon {
+.search-result-icon {
   color: #0065FC;
   background-color: #ffffff;
   border:#f2f2f2 2px solid;
@@ -125,4 +128,20 @@
   display:flex;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (min-width: 600px){
+  .search-form {
+    max-width: 330px;
+  }
+
+  .filter-title {
+    margin: 0px 20px 0px 0px;
+    padding-top: 1rem;
+  }
+
+  .search-filter:hover {
+    background: #0065FC;
+    color: #ffffff;
+  }
 }
