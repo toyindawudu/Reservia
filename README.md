@@ -10,7 +10,7 @@ This is a booking reservation travel website
 
 **Approach**
 
-I am creating a prototype using a design created by the UI designer, Loic. 
+I am creating a prototype using a design created by the UI designer, Loic. My approach is to use a mobile-first approach and use flexbox primarily where possible to make my work responsive.
 
 **Technical Constraints**
 1. The site font is Raleway
@@ -18,6 +18,7 @@ I am creating a prototype using a design created by the UI designer, Loic.
 
 **Pain-Points**
 1. Making the site responsive was something that I foound quite challenging
+2. Not knowing how to use a software that could give me accurate measurements made the process troublesome 
 
 **Features of the website**
 - Users can search through their choice of cities
